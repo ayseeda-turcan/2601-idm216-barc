@@ -3,6 +3,24 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+.htaccess
+.txt
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+error_log
+php_errors.log
 # User-specific files
 *.rsuser
 *.suo
