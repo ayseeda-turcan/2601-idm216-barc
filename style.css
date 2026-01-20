@@ -8,6 +8,7 @@
     --title-color: #F1513B;
     --secondary-color: #FCC5BE;
     --text-active-color: #a92c1b;
+    --text-hover-color: #ee6755;
     --description-gradient: linear-gradient(to bottom, #1a2c07, #7f8d51);
     --border-radius: 20px;
 }
@@ -49,7 +50,7 @@ body {
     min-height: 100vh;
 }
 
-button {
+/* button {
     background-color: var(--button-color);
     color: var(--title-color);
     font-weight: 300;
@@ -63,14 +64,19 @@ button:active {
     background-color: var(--button-active-color);
     color: var(--text-active-color);
     transition: color 0.3s ease;
-}
+} */
 
-a {
+body a {
     color: var(--title-color);
     font-weight: 600;
 }
 
-a:active {
+body a:hover {
+    color: var(--text-hover-color);
+    transition: color 0.3s ease;
+}
+
+body a:active {
     color: var(--text-active-color);
     transition: color 0.3s ease;
 }
@@ -111,6 +117,11 @@ a:active {
     color: var(--title-color);
 }
 
+.nav-links nav ul li a:hover {
+    color: var(--text-hover-color);
+    transition: color 0.3s ease;
+}
+
 .nav-links nav ul li a:active {
     color: var(--text-active-color);
     transition: color 0.3s ease;
@@ -119,7 +130,7 @@ a:active {
 footer {
     background-color: var(--secondary-color);
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     color: var(--text-color);
 
     position: fixed;
@@ -142,13 +153,14 @@ footer {
 .intro h2 {
     font-size: 1.8rem;
     font-style: italic;
-    margin: 3rem 5rem 1rem 5rem;
+    margin: 4rem 5rem 1rem 5rem;
     color: var(--title-color);
 }
 
 .intro p {
     font-size: 1rem;
     color: var(--text-color);
+    margin-bottom: 10rem;
 }
 
 
@@ -166,13 +178,15 @@ footer {
     border-radius: var(--border-radius);
     position: relative;
     width: 30%;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
     cursor: pointer;
 }
 
 .thumbnail:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+
     transition: transform 0.35s ease;
 }
 
