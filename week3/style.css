@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+    --background-color: #FEF8F5;
+    --button-color: #a1cbb7;
+    --button-active-color: #87b59f;
+    --text-color: #323232;
+    --title-color: #F1513B;
+    --secondary-color: #FCC5BE;
+    --text-active-color: #a92c1b;
+    --text-hover-color: #ee6755;
+    --description-gradient: linear-gradient(to bottom, #1a2c07, #7f8d51);
+    --border-radius: 20px;
+}
+
+/* FCC5BE */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+figcaption,
+blockquote {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Kode Mono', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: var(--background-color);
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--title-color);
+    text-align: center;
+    margin: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    border: 1px solid var(--text-hover-color);
+    padding: 8px;
+}
+
+th {
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
